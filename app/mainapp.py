@@ -1,4 +1,5 @@
-from funciones import iniciar_matriz, mostrar_menu, validar_opcion
+from funciones import (mostrar_menu, validar_opcion, 
+                    suma_total_unidades, mostrar_matriz, obtener_minimo)
 from UTN_Heroes_Dataset.utn_pp import clear_console
 
 def garage_app(matriz: list[list]) -> None:
@@ -9,11 +10,12 @@ def garage_app(matriz: list[list]) -> None:
 
         match opcion:
             case 1:
-                iniciar_matriz(matriz)
+                # El punto 1 y 5 estan resueltos en esta funcion
+                mostrar_matriz()
             case 2:
-                pass
+                suma_total_unidades(matriz)
             case 3:
-                pass
+                obtener_minimo(matriz)
             case 4:
                 pass
             case 5:
